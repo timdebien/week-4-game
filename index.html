@@ -1,69 +1,100 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
- 
+
     <title>Crystal Game</title>
-    <link rel="stylesheet" type="text/css"  href="assets/crystalgame.css" >
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="assets\crystalgame.js"></script>
-    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/crystalgame.css">
+
 </head>
+
 <body>
-    
-        <div class="jumbotron">
-        <h1>Crystal Collector</h1>
-      
-      </div>
-      
-   
-   
-    <div class="container">
-        
-        <div>
-            <h2 class="col-md-2">Computer score</h2>
-            <h2 class="col-md-2" id="computer-score"></h2>
-        </div>
-            
-
-     
-
-       
-    
-    <div class="row">
-    <div class="col-md-12">        
-    <div class="crystal">
-        <div class="col-md-3">
-        <img src="images/yellowcrystal.jpg" class="img-thumbnail" id="one" alt="bluecrystal">
-        </div>
-        <div class="col-md-3">
-        <img src="images/redcrystal.jpg" class="img-thumbnail" id="two" alt="greencrystal">
-        </div>
-        <div class="col-md-3">
-        <img src="images/redcrystal.jpg" class="img-thumbnail" id="three" alt="redcrystal">
-        </div>
-        <div class="col-md-3">
-        <img src="images/yellowcrystal.jpg" class="img-thumbnail" id="four" alt="yellowcrystal">
-        </div>
+    <div class="bill">
+    <div class="jumbotron">
+        <h1 class="title">Crystal Collector</h1>
 
     </div>
-</div>    
-</div>
+    </div>
 
-<div>
-    <h2 class="col-md-2">Score</h2>
-    <h2 class="col-md-2" id="my-score"></h2>
-</div>
+
+    <div class="container">
+        
+        <div class="col-md-2 text-center">
+            <div class="row">
+                    <div class="computerscore">
+                <p>
+                    <span id="computer-score"></span>
+                </p>
+                </div>  
+            </div>
+        </div>
         
 
-    <h2 class="col-md-4">Wins</h2>
-    <h2 class="col-md-4">Losses</h2>
 
 
-</div>
 
-    
+
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="crystal">
+                    <div class="col-md-3">
+                        <img src="images/yellowcrystal.jpg" class="img-thumbnail gempic" id="one" alt="bluecrystal">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="images/redcrystal.jpg" class="img-thumbnail gempic" id="two" alt="greencrystal">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="images/redcrystal copy.jpg" class="img-thumbnail gempic" id="three" alt="redcrystal">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="images/yellowcrystal copy.jpg" class="img-thumbnail gempic" id="four" alt="yellowcrystal">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+<div class="bar">
+            <div class="col-md-4 text-center">
+                <div class="row">
+                    <p>Score
+                        <span id="my-score"></span>
+                    </p>
+
+                </div>
+            </div>
+            
+            <div class="col-md-4 text-center">
+                <div class="row">
+                    <p>Wins
+                        <span id="wins"></span>
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <div class="row">
+                    <p>Losses
+                        <span id="losses"></span>
+                    </p>
+
+                </div>
+
+            </div>
+</div>  
+
+        </div>
+    </div>
+
+
 </body>
+
 </html>
